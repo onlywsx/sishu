@@ -5,6 +5,8 @@
         <!-- Customize your theme here. -->
         <!--设置透明背景-->
         <item name="android:windowIsTranslucent">true</item>
+        <!-- Android6.0 中提供了亮色状态栏模式（白底黑字） -->
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
 </resources>

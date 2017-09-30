@@ -41,12 +41,15 @@ Navigation.startTabBasedApp({
     //-------- Common ----------//
     orientation: 'portrait', // Sets a specific orientation to the entire app. Default: 'auto'. Supported values: 'auto', 'landscape', 'portrait'
     
+    //statusBar // it don't work // res/values/styles.xml instead of statusBarTextColorScheme
+    statusBarTextColorScheme: 'light', // text color of status bar, 'dark' / 'light' (remembered across pushes)    
+    
     //navBar
-    navBarTextColor: '#007aff', // change the text color of the title (remembered across pushes)
+    navBarTextColor: '#24292e', // change the text color of the title (remembered across pushes)
     navBarTextFontSize: 20, // change the font size of the title
     // navBarTextFontFamily: 'font-name', // Changes the title font
-    navBarButtonColor: '#007aff', // Change color of nav bar buttons (eg. the back button) (remembered across pushes)
-    navBarBackgroundColor: '#f7f7f7', // change the background color of the nav bar (remembered across pushes)
+    navBarButtonColor: '#24292e', // Change color of nav bar buttons (eg. the back button) (remembered across pushes)
+    navBarBackgroundColor: '#f2f2f2', // change the background color of the nav bar (remembered across pushes)
     
     //tabBar
     tabBarButtonColor: '#a0a0a0', // optional, change the color of the tab icons and text (also unselected). On Android, add this to appStyle
@@ -55,14 +58,14 @@ Navigation.startTabBasedApp({
     
     //------------- Android ------------/
     //statusBar
-    statusBarColor: '#002b4c', // change the color of the status bar.
+    statusBarColor: '#f2f2f2', // change the color of the status bar.
     //navBar
     navBarTitleTextCentered: true, // default: false. centers the title.
     navBarHeight: 48, // Optional, set the navBar height in pixels.
     //tabBar
     forceTitlesDisplay: true, // Android only. If true - Show all bottom tab labels. If false - only the selected tab's label is visible.
     //navigationBar
-    navigationBarColor: '#003a66',
+    // navigationBarColor: '#003a66',
     
     //-------------- IOS -------------/
     // backButtonImage: require('./img/pathToImage.png'), // Change the back button default arrow image with provided image. iOS only
