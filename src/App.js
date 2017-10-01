@@ -6,9 +6,10 @@
 
 import { Navigation } from 'react-native-navigation';
 
-import { registerScreens } from './screens';
+import { registerScreens, registerScreenVisibilityListener } from './screens';
 
 registerScreens(); // this is where you register all of your app's screens
+registerScreenVisibilityListener()
 
 // start the app
 Navigation.startTabBasedApp({
@@ -29,7 +30,7 @@ Navigation.startTabBasedApp({
     },
     {
       label: '发现',
-      screen: 'sishu.FindScreen',
+      screen: 'sishu.DiscoveryScreen',
       icon: require('./img/three_selected.png'),
       selectedIcon: require('./img/three_selected.png'), // iOS only
       title: '发现'
@@ -74,6 +75,12 @@ Navigation.startTabBasedApp({
   drawer: {
     left: {
       screen: 'sishu.MenuDrawer'
+    },
+    style: { // ( iOS only )
+      drawerShadow: false, // optional, add this if you want a side menu drawer shadow
+      contentOverlayColor: 'rgba(0,0,0,0.5)', // optional, add this if you want a overlay color when drawer is open
+      // leftDrawerWidth: 50, // optional, add this if you want a define left drawer width (50=percent)
+      shouldStretchDrawer: true // optional, iOS only with 'MMDrawer' type, whether or not the panning gesture will “hard-stop” at the maximum width for a given drawer side, default : true
     }
   }
 });

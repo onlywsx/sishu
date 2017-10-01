@@ -5,7 +5,7 @@ import {
   View
 } from 'react-native';
 
-export default class FindScreen extends React.Component {
+export default class DiscoveryScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
